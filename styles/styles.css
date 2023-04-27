@@ -41,6 +41,7 @@ a:visited {
     flex-direction: row;
     justify-content: space-between;
     padding-block: 20px;
+    position: fixed;
 }
 
 .navLogo {
@@ -72,13 +73,16 @@ a:visited {
 }
 
 /*Home Page*/
+  /*Landing Banner*/
 .headerImage {
   display: flex;
   justify-content: center;
   align-items: end;
   background-image: url(/images/landingPageBanner.webp);
   background-position: center;
+  background-size: cover;
   height: 350px;
+  padding-top: 73px;
 }
 
 .homeHeader {
@@ -86,3 +90,55 @@ a:visited {
   margin-bottom: 90px;
   text-shadow: -1px -1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
 }
+
+  /*Main Section Containers*/
+  .mainSection {
+    margin-inline: 5%;
+    margin-top: 20px;
+    display: flex;
+    flex: 2 1 auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  /*Carousel Browsing and Page Text*/
+  .contentContainer {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+  }
+  .carouselContainer {
+    background-color: var(--containerBackground);
+    height: 200px;
+  }
+
+  .carouselTitleContainer {
+    background-color: var(--containerHeaderBackground);
+    display: flex;
+    align-items: center;
+    height: 5vh;
+    margin: 0;
+  }
+
+  .carouselHeader {
+    margin: 0;
+    padding-left: 5px;
+  }
+
+  /*Socails Tab*/
+  .socials {
+    display: flex;
+    background-color: var(--containerBackground);
+    min-width: 20%;
+    margin-left: 5px;
+    height: 15vh;
+  }
+
+  .socialsTitleContainer {
+    display: flex;
+    align-items: center;
+    background-color: var(--containerHeaderBackground);
+    height: 5vh;
+    width: 100%;
+    padding-left: 5px;
+  }
