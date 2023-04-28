@@ -22,6 +22,10 @@ a:visited {
   color: var(--textColor);
 }
 
+.subFont {
+  font-family: var(--contentFont);
+}
+
 :root {
     --mainFont: "brunoAce", Verdana, Tahoma, sans-serif;
     --contentFont: arial, verdana, tahoma, sans-serif;
@@ -30,6 +34,7 @@ a:visited {
     --htmlBackground: rgba(104, 104, 104, 1);
     --containerHeaderBackground: rgba(84, 84, 84, 1);
     --containerBackground: rgba(31, 31, 31, 1);
+    --carouselContentBackground: rgba(222, 222, 222, 1);
 }
 
 /*Navigation Bar*/
@@ -72,6 +77,21 @@ a:visited {
   box-shadow: inset 200px 0 0 0 var(--textColor);
 }
 
+/*Footer*/
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: var(--navContainerColor);
+  width: 100%;
+  padding-block: 20px;
+
+}
+
+.footer p {
+  margin: 0;
+}
+
 /*Home Page*/
   /*Landing Banner*/
 .headerImage {
@@ -106,22 +126,92 @@ a:visited {
     flex-direction: column;
     width: 75%;
   }
+  
   .carouselContainer {
+    display: flex;
+    flex-direction: column;
     background-color: var(--containerBackground);
-    height: 200px;
   }
 
   .carouselTitleContainer {
     background-color: var(--containerHeaderBackground);
     display: flex;
     align-items: center;
-    height: 5vh;
+    height: 30%;
     margin: 0;
   }
 
   .carouselHeader {
     margin: 0;
     padding-left: 5px;
+  }
+
+  .carouselContentContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: 20px;
+    height: 100%;
+    width: 100%;
+  }
+
+  .carouselContentContainer button {
+    display: flex;
+    height: 10vh;
+    width:10vh;
+    background-color: var(--containerBackground);
+    border: none;
+    cursor: pointer;
+  }
+
+  .leftArrowIcon {
+    background-image: url(/images/featuredArrow.svg);
+    height: 100%;
+    width: 100%;
+    min-width: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .rightArrowIcon {
+    background-image: url(/images/featuredArrow.svg);
+    transform: rotate(180deg);
+    height: 100%;
+    width: 100%;
+    min-width: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .carouselCardContainer {
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+  }
+
+  .carouselContent {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--carouselContentBackground);
+    max-width: 250px;
+    min-width: 100px;
+    min-height: 100px;
+    margin-inline: 10px;
+  }
+
+  .carouselContent img {
+    width: 100%;
+  }
+
+  .carouselContent h3{
+    color: black;
+    padding-inline: 5px;
+    font-size: 1rem;
+    width: 100%;
+  }
+
+  .mainContent p {
+    font-size: 1.2rem;
   }
 
   /*Socails Tab*/
