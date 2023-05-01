@@ -1,19 +1,19 @@
 /*Global Variables*/
 @font-face {
-    font-family: "brunoAce";
-    src: url(/styles/fonts/BrunoAce-Regular.ttf);
-    font-display: swap;
+  font-family: "brunoAce";
+  src: url(/styles/fonts/BrunoAce-Regular.ttf);
+  font-display: swap;
 }
 
 html {
-    font-family: var(--mainFont);
-    background-color: var(--htmlBackground);
+  font-family: var(--mainFont);
+  background-color: var(--htmlBackground);
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    color: var(--textColor);
+  margin: 0;
+  padding: 0;
+  color: var(--textColor);
 }
 
 a:link,
@@ -27,41 +27,41 @@ a:visited {
 }
 
 :root {
-    --mainFont: "brunoAce", Verdana, Tahoma, sans-serif;
-    --contentFont: arial, verdana, tahoma, sans-serif;
-    --textColor: white;
-    --navContainerColor: rgba(31, 31, 31, 1);
-    --htmlBackground: rgba(104, 104, 104, 1);
-    --containerHeaderBackground: rgba(84, 84, 84, 1);
-    --containerBackground: rgba(31, 31, 31, 1);
-    --carouselContentBackground: rgba(222, 222, 222, 1);
+  --mainFont: "brunoAce", Verdana, Tahoma, sans-serif;
+  --contentFont: arial, verdana, tahoma, sans-serif;
+  --textColor: white;
+  --navContainerColor: rgba(31, 31, 31, 1);
+  --htmlBackground: rgba(104, 104, 104, 1);
+  --containerHeaderBackground: rgba(84, 84, 84, 1);
+  --containerBackground: rgba(31, 31, 31, 1);
+  --carouselContentBackground: rgba(222, 222, 222, 1);
 }
 
 /*Navigation Bar*/
 .navigation {
-    background-color: var(--navContainerColor);
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-block: 20px;
-    position: fixed;
+  background-color: var(--navContainerColor);
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-block: 20px;
+  position: fixed;
 }
 
 .navLogo {
-    margin-left: 20px;
-    font-size: 1.7rem;
+  margin-left: 20px;
+  font-size: 1.7rem;
 }
 
 .navList {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    margin: 0;
-    margin-right: 20px;
-    gap: 20px;
-    font-size: 1.2rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0;
+  margin-right: 20px;
+  gap: 20px;
+  font-size: 1.2rem;
 }
 
 .navList a {
@@ -85,7 +85,6 @@ a:visited {
   background-color: var(--navContainerColor);
   width: 100%;
   padding-block: 20px;
-
 }
 
 .footer p {
@@ -93,7 +92,7 @@ a:visited {
 }
 
 /*Home Page*/
-  /*Landing Banner*/
+/*Landing Banner*/
 .headerImage {
   display: flex;
   justify-content: center;
@@ -108,168 +107,179 @@ a:visited {
 .homeHeader {
   margin: 0;
   margin-bottom: 90px;
-  text-shadow: -1px -1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
+  text-shadow: -1px -1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000,
+    -1px -1px 0 #000;
 }
 
-  /*Main Section Containers*/
-  .mainSection {
-    margin-inline: 5%;
-    margin-top: 20px;
-    display: flex;
-    flex: 2 1 auto;
-    justify-content: space-between;
-  }
+/*Main Section Containers*/
+.mainSection {
+  margin-inline: 5%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  flex: 2 1 auto;
+  justify-content: space-between;
+}
 
-  /*Carousel Browsing and Page Text*/
-  .contentContainer {
-    display: flex;
-    flex-direction: column;
-    width: 75%;
-  }
-  
-  .carouselContainer {
-    display: flex;
-    flex-direction: column;
-    background-color: var(--containerBackground);
-  }
+/*Carousel Browsing and Page Text*/
+.contentContainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-block: 20px;
+}
 
-  .carouselTitleContainer {
-    background-color: var(--containerHeaderBackground);
-    display: flex;
-    align-items: center;
-    height: 30%;
-    margin: 0;
-  }
+.carouselContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--containerBackground);
+}
 
-  .carouselHeader {
-    margin: 0;
-    padding-left: 5px;
-  }
+.carouselTitleContainer {
+  background-color: var(--containerHeaderBackground);
+  display: flex;
+  align-items: center;
+  height: 5vh;
+  margin: 0;
+}
 
-  .carouselContentContainer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-block: 20px;
-    height: 100%;
-    width: 100%;
-  }
+.carouselHeader {
+  margin: 0;
+  padding-left: 5px;
+}
 
-  .carouselContentContainer button {
-    display: flex;
-    height: 10vh;
-    width:10vh;
-    background-color: var(--containerBackground);
-    border: none;
-    cursor: pointer;
-  }
+.carouselContentContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 20px;
+  height: 100%;
+  width: 100%;
+}
 
-  .leftArrowIcon {
-    background-image: url(/images/featuredArrow.svg);
-    height: 100%;
-    width: 100%;
-    min-width: 50px;
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
+.carouselContentContainer button {
+  display: flex;
+  height: 10vh;
+  width: 10vh;
+  background-color: var(--containerBackground);
+  border: none;
+  cursor: pointer;
+}
 
-  .rightArrowIcon {
-    background-image: url(/images/featuredArrow.svg);
-    transform: rotate(180deg);
-    height: 100%;
-    width: 100%;
-    min-width: 50px;
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
+.leftArrowIcon {
+  background-image: url(/images/featuredArrow.svg);
+  height: 100%;
+  width: 100%;
+  min-width: 50px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 
-  .carouselCardContainer {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    overflow-y: hidden;
-  }
+.rightArrowIcon {
+  background-image: url(/images/featuredArrow.svg);
+  transform: rotate(180deg);
+  height: 100%;
+  width: 100%;
+  min-width: 50px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 
-  .carouselContent {
-    display: flex;
-    flex-direction: column;
-    background-color: var(--carouselContentBackground);
-    max-width: 250px;
-    min-width: 100px;
-    min-height: 100px;
-    margin-inline: 10px;
-  }
+.carouselCardContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  overflow-y: hidden;
+}
 
-  .carouselContent img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-    object-position: center;
-  }
+.carouselContent {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--carouselContentBackground);
+  max-width: 250px;
+  min-width: 100px;
+  min-height: 100px;
+  margin-inline: 10px;
+}
 
-  .carouselContent h3{
-    color: black;
-    padding-inline: 5px;
-    font-size: 1rem;
-    width: 100%;
-  }
+.carouselContent img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  object-position: center;
+}
 
-  .mainContent p {
-    font-size: 1.2rem;
-  }
+.carouselContent h3 {
+  color: black;
+  padding-inline: 5px;
+  font-size: 1rem;
+  width: 100%;
+}
 
-  /*Socails Tab*/
-  .socials {
-    display: flex;
-    flex-direction: column;
-    background-color: var(--containerBackground);
-    margin-left: 5px;
-    height: 15vh;
-  }
+.mainContent h1 {
+  font-size: 2rem;
+}
 
-  .socialsTitleContainer {
-    display: flex;
-    align-items: center;
-    background-color: var(--containerHeaderBackground);
-    height: 5vh;
-    width: 100%;
-  }
+.mainContent p {
+  font-size: 1.5rem;
+}
 
-  .socialsTitleContainer h2 {
-    padding-left: 5px;
-  }
+/*Socails Tab*/
+.socials {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--containerBackground);
+  margin-left: 20px;
+  margin-top: 20px;
+  height: 15vh;
+}
 
-  .iconList {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    gap: 20px;
-  }
+.socialsTitleContainer {
+  display: flex;
+  align-items: center;
+  background-color: var(--containerHeaderBackground);
+  height: 5vh;
+  width: 100%;
+}
 
-  #facebook, #twitter, #instagram, #github {
-    display: flex;
-    background-repeat: no-repeat;
-    height: 50px;
-    width: 50px;
-  }
+.socialsTitleContainer h2 {
+  padding-left: 5px;
+}
 
-  #facebook {
-    background-image: url(/images/facebookIcon.svg);
-    margin-left: 10px;
-  }
+.iconList {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+}
 
-  #twitter {
-    background-image: url(/images/twitterIcon.svg);
-  }
+#facebook,
+#twitter,
+#instagram,
+#github {
+  display: flex;
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 50px;
+}
 
-  #instagram {
-    background-image: url(/images/instagramIcon.svg);
-  }
+#facebook {
+  background-image: url(/images/facebookIcon.svg);
+  margin-left: 10px;
+}
 
-  #github {
-    background-image: url(/images/githubIcon.svg);
-    margin-right: 10px;
-  }
+#twitter {
+  background-image: url(/images/twitterIcon.svg);
+}
+
+#instagram {
+  background-image: url(/images/instagramIcon.svg);
+}
+
+#github {
+  background-image: url(/images/githubIcon.svg);
+  margin-right: 10px;
+}
