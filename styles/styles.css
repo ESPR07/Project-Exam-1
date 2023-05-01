@@ -8,6 +8,7 @@
 html {
   font-family: var(--mainFont);
   background-color: var(--htmlBackground);
+  height: 100%;
 }
 
 body {
@@ -85,6 +86,8 @@ a:visited {
   background-color: var(--navContainerColor);
   width: 100%;
   padding-block: 20px;
+  position: static;
+  bottom: 0;
 }
 
 .footer p {
@@ -167,7 +170,6 @@ a:visited {
 }
 
 .leftArrowIcon {
-  background-image: url(/images/featuredArrow.svg);
   height: 100%;
   width: 100%;
   min-width: 50px;
