@@ -5,42 +5,66 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Technology is all round us" />
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
     <link rel="stylesheet" href="/styles/styles.css" />
     <script defer src="/script/index.js"></script>
-    <title>TechPost || Home Page</title>
+    <!-- Hotjar Tracking Code for https://friendly-platypus-9bdbde.netlify.app/ -->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 3485583, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
+    <title>TechPost | Home Page</title>
   </head>
   <body>
     <nav class="navigation">
       <a class="navLogo" href="/index.html" title="Go to the home Page"
-        >TechPost</a
+        ><span class="logoColor">Tech</span>Post</a
       >
-      <ul class="navList">
-        <a href="#" title="Head to the blog list">Blog</a>
-        <a href="#" title="Read more about us">About</a>
-        <a href="#" title="Ask us questions">Contact</a>
-      </ul>
+      <div class="navList">
+        <a href="/browsePage.html" title="Head to the blog list">Blog</a>
+        <a href="/about.html" title="Read more about us">About</a>
+        <a href="/contact.html" title="Ask us questions">Contact</a>
+      </div>
     </nav>
-    <div class="headerImage">
-      <h1 class="homeHeader">Technology is all around us</h1>
-    </div>
+    <h1 class="homeHeader">
+      <span class="logoColor">Technology</span> is all around us
+    </h1>
     <section class="mainSection">
       <div class="carouselContainer">
         <div class="carouselTitleContainer">
           <h2 class="carouselHeader">The latest news</h2>
         </div>
         <div class="carouselContentContainer">
-          <button class="carouselLeftButton">
-            <span class="leftArrowIcon"></span>
-          </button>
-          <div class="carouselCardContainer"></div>
-          <button class="carouselRightButton">
-            <span class="rightArrowIcon"></span>
-          </button>
+          <button
+            class="carouselLeftButton"
+            title="Previous news results"
+          ></button>
+          <div class="carouselCardContainer">
+            <span class="indexLoader"></span>
+            <span class="indexLoader"></span>
+            <span class="indexLoader"></span>
+            <span class="indexLoader"></span>
+          </div>
+          <button
+            class="carouselRightButton"
+            title="Next news results"
+          ></button>
         </div>
       </div>
       <div class="contentContainer">
         <article class="mainContent">
-          <h1>TechPost Blog</h1>
+          <h3>Tech<span class="headerColorInvert">Post Blog</span></h3>
           <p class="subFont">
             Welcome to our technology blog, where we bring you the latest
             updates, trends, and insights from the ever-evolving world of
@@ -67,38 +91,46 @@
             <h2>Socials</h2>
           </div>
           <ul class="iconList">
-            <a
-              href="https://www.facebook.com/"
-              title="Facebook"
-              class="socialsIcon"
-              ><span id="facebook"></span
-            ></a>
-            <a href="https://twitter.com/" title="Twitter" class="socialsIcon"
-              ><span id="twitter"></span
-            ></a>
-            <a
-              href="https://www.instagram.com/"
-              title="Instagram"
-              class="socialsIcon"
-              ><span id="instagram"></span
-            ></a>
-            <a
-              href="https://github.com/ESPR07"
-              title="Github"
-              class="socialsIcon"
-              ><span id="github"></span
-            ></a>
+            <li>
+              <a
+                href="https://www.facebook.com/"
+                title="Facebook"
+                class="socialsIcon"
+                ><span id="facebook"></span
+              ></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/" title="Twitter" class="socialsIcon"
+                ><span id="twitter"></span
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/"
+                title="Instagram"
+                class="socialsIcon"
+                ><span id="instagram"></span
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/ESPR07"
+                title="Github"
+                class="socialsIcon"
+                ><span id="github"></span
+              ></a>
+            </li>
           </ul>
         </div>
       </div>
     </section>
     <footer class="footer">
       <p>Copyright <span class="subFont">©</span> 2023 Techpost Blog</p>
-      <ul class="navList">
-        <a href="#" title="Head to the blog list">Blog</a>
-        <a href="#" title="Read more about us">About</a>
-        <a href="#" title="Ask us questions">Contact</a>
-      </ul>
+      <div class="navList">
+        <a href="/browsePage.html" title="Head to the blog list">Blog</a>
+        <a href="/about.html" title="Read more about us">About</a>
+        <a href="/contact.html" title="Ask us questions">Contact</a>
+      </div>
     </footer>
   </body>
 </html>

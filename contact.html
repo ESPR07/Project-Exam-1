@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Come in contact with us" />
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <script defer src="/script/components/contactForm.js"></script>
+    <!-- Hotjar Tracking Code for https://friendly-platypus-9bdbde.netlify.app/ -->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 3485583, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
+    <title>TechPost | Contact</title>
+  </head>
+  <body>
+    <nav class="navigation">
+      <a class="navLogo" href="/index.html" title="Go to the home Page"
+        ><span class="logoColor">Tech</span>Post</a
+      >
+      <div class="navList">
+        <a href="/browsePage.html" title="Head to the blog list">Blog</a>
+        <a href="/about.html" title="Read more about us">About</a>
+        <a href="/contact.html" title="Ask us questions">Contact</a>
+      </div>
+    </nav>
+    <dialog class="successModal">
+      <h1>Thank you for contacting us!</h1>
+      <p>We will respond to your message as fast as we can.</p>
+    </dialog>
+    <section class="contentBox">
+      <div class="contentHeaderBox">
+        <h1>Contact Us</h1>
+      </div>
+      <form class="contactForm">
+        <div class="inputFields">
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="e.g John Smith (min 5 characters)"
+          />
+          <p class="error" id="errorName">Please enter your full name</p>
+          <label for="email">Email:</label>
+          <input
+            type="text"
+            id="email"
+            name="email"
+            placeholder="e.g mail@mail.com"
+          />
+          <p class="error" id="errorEmail">Please enter a valid email</p>
+          <label for="subject">Subject:</label>
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            placeholder="Enter a subject (min 15 characters)"
+          />
+          <p class="error" id="errorSubject">
+            Subject must be at least 15 characters
+          </p>
+          <label for="message">Message:</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="6"
+            cols="50"
+            placeholder="Enter your message (min 25 characters)"
+          ></textarea>
+          <p class="error" id="errorMessage">
+            Message must be at least 25 characters
+          </p>
+        </div>
+        <button class="button" title="Submit your form">Submit</button>
+      </form>
+    </section>
+  </body>
+</html>
