@@ -45,7 +45,7 @@ npm install
 
 ### Deployed Sites
 
-#### The deployed site for this repository:
+#### The Netlify deployment for this repository:
 [TechPost Exam Project](https://techpost-projectexam.netlify.app/)
 
 ## Contact
