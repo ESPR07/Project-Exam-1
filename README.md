@@ -16,7 +16,7 @@ Exam's key points:
   - About Us Page
   - Contact Page
 - Creating functional components for the site like Carousel, Form Validation and Image Modals
-- Recieving feedback from end-users and imporve pages based on said feedback
+- Recieving feedback from end-users and improve pages based on said feedback
 - Making a fully functional backend for the site
 - Hosting web page on a hosted server with domain 
 
