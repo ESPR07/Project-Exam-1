@@ -1,67 +1,54 @@
 ## Project Exam 1
+![Screenshot_2](https://github.com/ESPR07/Project-Exam-1/assets/111272036/66d8300b-cd97-48da-bd21-2da25bbaf0cb)
 
-## Goal
+Here is a simple overview of the project.
 
-To put into practice the skills learned over your first year of studies.
+## Description
+The Project Exam was the biggest delivery we had all year. It involved creating a full blog site of our choice from the ground up and it have to include at least 12 blog posts on the back end, a carousel for latest blogs and image modals as well as everything we've learned during the first year.
+We had 5 weeks to complete this exam.
 
-## Brief
-You have been tasked with creating a blog site. You can choose the design and topics covered on the blog, but it should have at least the following pages:
--	Home page
--	About page
--	List of blog posts
--	Blog post specific pages
--	Contact page.
+Exam's key points:
+- Prototyping with Figma
+- Coding up pages
+  - Home Page
+  - Blogs Page
+  - Blog Specific Page
+  - About Us Page
+  - Contact Page
+- Creating functional components for the site like Carousel, Form Validation and Image Modals
+- Recieving feedback from end-users and imporve pages based on said feedback
+- Making a fully functional backend for the site
+- Hosting web page on a hosted server with domain 
 
-### Home Page
-The home page should have a ‘Latest Posts’ section which uses a carousel (slider) for users to click to view more posts. For example, by default the user can see four posts, then they can click an arrow on the right to view the next four posts, and click it again to view the next four posts. The user can also click back to view results they had previously seen. This must be implemented for desktop at least, but if you want a simpler layout for mobile, you can change it from being in a carousel.
+## Built With
+- [Figma](https://www.figma.com/) (Prototyping)
+- HTML5
+- CSS3
+- Javascript
+- Wordpress (Headless Backend)
 
-### Blog Page
+## Getting Started
 
-The blog posts page should show the first 10 blogs, and the user should click to view more results which then show underneath the first 10 blogs.
+### Installing
 
-### Blog Specific Page
+1. Clone the repo:
 
-The content of the blog specific page should be dynamically built using a query string parameter based on whatever link the user clicked. The title of the blog specific page should change based on the blog that has been clicked on e.g. “My Blog | An Article I Wrote”.
+```bash
+git clone git@github.com:ESPR07/cross-course-assignment-noroff.git
+```
 
-If images on the blog post page are clicked, a modal should appear giving the user a bigger view of that image. Clicking outside the image should hide the modal.
+2. Install the dependencies:
 
-### Contact page
+```
+npm install
+```
 
-Create a contact us page, there should be 4 textboxes on this page.
--	Name (Should be more than 5 characters long)
--	Email address (Must be a valid email address)
--	Subject (Should be more than 15 characters long)
--	Message content (Should be more than 25 characters long)
+### Deployed Sites
 
-Please use JavaScript for validation, show error messages if the values in the textboxes do not meet the requirements.
+#### The deployed site for this repository:
+[TechPost Exam Project](https://techpost-projectexam.netlify.app/)
 
-### WordPress
+## Contact
+[My LinkedIn Page](https://www.linkedin.com/in/sindre-str%C3%B8ms%C3%A6ther-der%C3%A5s-212353249/)
 
-The content for your website will be stored on a WordPress installation used as a Headless CMS. It’s important to note that we are only using WordPress to provide an API and add content for the blog. You should not submit a link to a WordPress site, but build your website using HTML, CSS and JavaScript and making a call to the WordPress REST API to fetch the data. 
-
-The project has two aspects:
--	API from your WordPress installation
--	Your website built with HTML, CSS and JavaScript
-
-You will need to add at least 12 blogs for your website. You can use lorem ipsum for paragraphs if you need, but headings, images etc. should all make sense.
-
-Note that this is an exam, and therefore tutor support will be limited as per the study plan.
-
-## Level 1 Process
-
-1.	Decide on the theme for the blog you’re going to make
-2.	Create a prototype of the website
-3.	Install WordPress on your web host and add the blogs on the admin panel. 
-4.	Use the GitHub repo created by GitHub Classroom for your files and deploy to Netlify
-5.	Build your website using HTML, CSS and JavaScript making a call to the WordPress REST API to fetch your data.
-6.	Install Hotjar on your website.
-7.	Ask users to test your website, and adjust based on their feedback and any insights from Hotjar.
-8.	Write a report documenting your project (template provided in this repository).
-9.	Submit your report as a PDF and a link to both your Netlify deployment and your GitHub repo.
- 
-## Level 2 Process (optional)
-
-1.	You can try adding a sort, filter, or search to the blog posts page allowing users to find the blog post more easily that they’re looking for. 
-2.	Post the data from the contact form to WordPress so you have the details saved.
-3.	Allow users to submit comments on a blog post, and post this data to WordPress
-
+My Email: sinder009@gmail.com 
