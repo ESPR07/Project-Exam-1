@@ -31,17 +31,17 @@ Exam's key points:
 
 ### Installing
 
-1. Clone the repo:
+You can either:
+
+1. Clone the repo and run a Liveserver:
 
 ```bash
 git clone git@github.com:ESPR07/cross-course-assignment-noroff.git
 ```
 
-2. Install the dependencies:
+2. Open the live site:
 
-```
-npm install
-```
+https://techpost-projectexam.netlify.app/
 
 ### Deployed Sites
 
