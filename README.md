@@ -1,8 +1,6 @@
 ## Project Exam 1
 ![Screenshot_2](https://github.com/ESPR07/Project-Exam-1/assets/111272036/66d8300b-cd97-48da-bd21-2da25bbaf0cb)
 
-Here is a simple overview of the project.
-
 ## Description
 The Project Exam was the biggest delivery we had all year. It involved creating a full blog site of our choice from the ground up and it have to include at least 12 blog posts on the back end, a carousel for latest blogs and image modals as well as everything we've learned during the first year.
 We had 5 weeks to complete this exam.
