@@ -384,7 +384,7 @@ textarea {
   flex-direction: column;
   background-color: var(--containerBackground);
   margin-left: 20px;
-  height: 15vh;
+  height: 150px;
   border: var(--boxBorders);
 }
 
